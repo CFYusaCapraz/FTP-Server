@@ -1,10 +1,8 @@
-## Getting Started
+# Description
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is an application for concurrent FTP like server implemented by using JAVA programming language.
 
 ## Folder Structure
-
-The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
@@ -13,6 +11,10 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+### Running the application
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+While running the application there must be 3 parameter given in the command line. These parameters are (in order) :
+
+- Password file which contains the list of usernames and the passwords as a comma seperated values
+- Port number. Must be higer than 1024 if you are not running the application as root or admin user.
+- Directory to run on. The directory you want to serve in the FTP server. This should be a valid directory.
